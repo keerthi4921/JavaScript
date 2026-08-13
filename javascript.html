@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        #heading{
+            background-color: rgb(108, 221, 244);
+            text-align: center;
+            color: black;
+        }
+    
+        #B1{
+            width:300px;
+            height: 30px;
+            background-color: green;
+            color:whitesmoke;
+            border-radius: 30px;
+            
+        }
+        #B2{
+            width:300px;
+            height:30px;
+            background-color: rgb(167, 9, 9);
+            color:whitesmoke;
+            border-radius: 30px;
+            
+        }
+    </style>
+    
+
+</head>
+
+
+<body>
+    <h1 id="heading">Is becoming FullStack Developer is Easy?</h1>
+    <button id="B1">Yes</button>
+    <button id="B2">NO</button>
+</body>
+<script>
+    document.getElementById("B1").onclick = function() {
+        document.getElementById("heading").innerHTML="Yes it is 👌"
+    };
+    document.getElementById("B2").onclick = function() {
+        document.getElementById("heading").innerHTML="If you practice daily You can become FullStack Developer👍"
+    };
+</script>
+</html>
