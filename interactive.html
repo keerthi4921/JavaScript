@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Counter</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            margin-top: 100px;
+            background-color: lightblue;
+        }
+
+        .box {
+            background-color: white;
+            width: 300px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        #count {
+            font-size: 40px;
+            margin: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #increase {
+            background-color: green;
+            color: white;
+        }
+
+        #decrease {
+            background-color: red;
+            color: white;
+        }
+
+        #reset {
+            background-color: orange;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h1>Counter</h1>
+
+        <div id="count">0</div>
+
+        <button id="increase">Increase</button>
+        <button id="decrease">Decrease</button>
+        <button id="reset">Reset</button>
+
+    </div>
+
+
+    <script>
+
+    
+        let number = 0;
+
+        
+        let count = document.getElementById("count");
+        let increase = document.getElementById("increase");
+        let decrease = document.getElementById("decrease");
+        let reset = document.getElementById("reset");
+
+
+        
+        increase.onclick = function() {
+            number++;
+            count.innerHTML = number;
+        };
+
+
+        
+        decrease.onclick = function() {
+            number--;
+            count.innerHTML = number;
+        };
+
+
+        
+        reset.onclick = function() {
+            number = 0;
+            count.innerHTML = number;
+        };
+
+    </script>
+
+</body>
+</html>
